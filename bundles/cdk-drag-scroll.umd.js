@@ -459,7 +459,7 @@
             // https://github.com/angular/material2/issues/15227
             setTimeout(function () {
                 var dropListRef = _this.getDropListRef();
-                dropListRef._cacheItemPositions();
+                dropListRef._cacheParentPositions();
                 _this.addDebugInfo();
             });
             // fix for issue when classes is not resetted
@@ -488,10 +488,7 @@
         };
         DragScrollDirective.prototype.adjustContainers = function () {
             var dropListRef = this.getDropListRef();
-            dropListRef._cacheItemPositions();
-            // dropListRef._siblings.forEach(sibling => {
-            // sibling._cacheOwnPosition();
-            // });
+            dropListRef._cacheParentPositions();
         };
         DragScrollDirective.prototype.adjustItems = function (deltaX, deltaY) {
             var dropListRef = this.getDropListRef();

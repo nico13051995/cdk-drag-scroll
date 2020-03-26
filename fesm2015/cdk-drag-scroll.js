@@ -237,7 +237,7 @@ class DragScrollDirective {
         // https://github.com/angular/material2/issues/15227
         setTimeout(() => {
             const dropListRef = this.getDropListRef();
-            dropListRef._cacheItemPositions();
+            dropListRef._cacheParentPositions();
             this.addDebugInfo();
         });
         // fix for issue when classes is not resetted
@@ -266,10 +266,7 @@ class DragScrollDirective {
     }
     adjustContainers() {
         const dropListRef = this.getDropListRef();
-        dropListRef._cacheItemPositions();
-        // dropListRef._siblings.forEach(sibling => {
-        // sibling._cacheOwnPosition();
-        // });
+        dropListRef._cacheParentPositions();
     }
     adjustItems(deltaX, deltaY) {
         const dropListRef = this.getDropListRef();
