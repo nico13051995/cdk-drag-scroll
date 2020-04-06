@@ -6,6 +6,6 @@ export declare class DragDebugService {
     constructor();
     log(info: any[]): void;
     reset(): void;
-    static ɵfac: i0.ɵɵFactoryDef<DragDebugService>;
+    static ɵfac: i0.ɵɵFactoryDef<DragDebugService, never>;
     static ɵprov: i0.ɵɵInjectableDef<DragDebugService>;
 }

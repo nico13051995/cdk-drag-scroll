@@ -36,6 +36,6 @@ export declare class DragScrollDirective<T = any> implements OnDestroy, OnChange
     private adjustContainers;
     private adjustItems;
     private log;
-    static ɵfac: i0.ɵɵFactoryDef<DragScrollDirective<any>>;
+    static ɵfac: i0.ɵɵFactoryDef<DragScrollDirective<any>, never>;
     static ɵdir: i0.ɵɵDirectiveDefWithMeta<DragScrollDirective<any>, "[vsDragScroll]", ["vsDragScroll"], { "dragConnectedIds": "vsDragScrollConnectedTo"; "scrollContainer": "vsDragScrollContainer"; }, {}, never>;
 }
