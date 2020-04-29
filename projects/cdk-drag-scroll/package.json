@@ -1,9 +1,9 @@
 {
-  "name": "cdk-drag-scroll",
+  "name": "@nico13051995/cdk-drag-scroll",
   "version": "0.0.6",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cactusoft-ca/cdk-drag-scroll.git"
+    "url": "git+https://github.com/nico13051995/cdk-drag-scroll.git"
   },
   "peerDependencies": {
     "@angular/common": "^9.0.7",
